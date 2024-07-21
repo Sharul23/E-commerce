@@ -1,2 +1,2 @@
 # E-commerce
-my first fully responsive website
+My first fully responsive website
