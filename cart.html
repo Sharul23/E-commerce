@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -38,7 +38,8 @@
     </section>
 
     <section id="cart" class="section-p1">
-        <table width="100%">
+        <h2>Your Cart</h2>
+        <table width="100%" id="cart-table">
             <thead>
                 <tr>
                     <td>Remove</td>
@@ -49,62 +50,29 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f1.jpg" alt=""></td>
-                    <td>Cartoon astronaut T-Shirts</td>
-                    <td>₹250</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>₹250</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f2.jpg" alt=""></td>
-                    <td>Cool dude T-Shirts</td>
-                    <td>₹200</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>₹200</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/f3.jpg" alt=""></td>
-                    <td>Casual Shirts</td>
-                    <td>₹200</td>
-                    <td><input type="number" value="1" name="" id=""></td>
-                    <td>₹200</td>
-                </tr>
+            <tbody id="cart-items">
+                <!-- Cart items will be injected here by JavaScript -->
             </tbody>
         </table>
     </section>
 
-    <section id="cart-add" class="section-p1">
-        <div id="coupon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" placeholder="Enter your coupon">
-                <button class="normal">Apply</button>
-            </div>
-        </div>
-
-        <div id="subtotal">
-            <h3>Cart Total</h3>
-            <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>₹335</td>
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>₹335</strong></td>
-                </tr>
-            </table>
-             <button class="normal">Proceed to checkout</button>
-        </div>
+    <section id="cart-summary" class="section-p1">
+        <h3>Cart Summary</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td id="cart-subtotal">₹0</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong id="cart-total">₹0</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Proceed to Checkout</button>
     </section>
 
 </section>
@@ -171,6 +139,7 @@
 
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
