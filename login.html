@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login To Shopfiy</title>
+  <title>Login To Shopify</title>
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="login.css" />
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                   <div class="center-wrap">
                     <div class="section text-center">
                       <h4 class="mb-4 pb-3">Log In</h4>
-                      <form id="login-form">
+                      <form id="login-form" action="index.html">
                         <div class="form-group">
                           <input type="email" name="logemail" class="form-style" placeholder="Your Email"
                             id="login-email" autocomplete="off" required>
@@ -46,9 +47,8 @@
                             id="login-password" autocomplete="off" required>
                           <i class="input-icon uil uil-lock-alt"></i>
                         </div>
-                        <a href="index.html" class="btn mt-4">Submit</a>
+                        <button type="submit" class="btn mt-4">SUBMIT</button>
                         <a href="#0" class="link">Forgot your password?</a>
-                        </p>
                       </form>
                     </div>
                   </div>
@@ -79,6 +79,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -87,6 +88,7 @@
     </div>
   </div>
 
+  
 
 </body>
 
